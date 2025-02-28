@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+    background: purple;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: black;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.logo span {
+    color: #ffcc00;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h3 {
+    color: yellow;
+    font-style: italic;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #ffcc00;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background: white;
+}
+
+/* Hero Image Section */
+.hero-image {
+    position: relative;
+}
+
+.profile-pic {
+    width: 250px;
+    border-radius: 10px;
+}
+
+/* Floating Icons */
+.floating-icons {
+    position: absolute;
+    bottom: -20px;  /* Moves the icons below the profile image */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px; /* Adds spacing between the icons */
+}
+
+.floating-icons a {
+    display: inline-block;
+}
+
+.floating-icons img {
+    width: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.floating-icons img:hover {
+    transform: scale(1.1);
+}

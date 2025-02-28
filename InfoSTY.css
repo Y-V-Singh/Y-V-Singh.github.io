@@ -1,0 +1,72 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.info-box {
+    background: rgba(0,0,0);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.5);
+    text-align: center;
+    width: 350px;
+    backdrop-filter: blur(8px);
+}
+
+h2 {
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #00ffff;
+    font-weight: bold;
+}
+
+.social-links {
+    margin-top: 15px;
+}
+
+.social-btn {
+    display: inline-block;
+    background: linear-gradient(45deg, #ff00ff, #00ffff);
+    color: black;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.social-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6);
+}
