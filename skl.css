@@ -1,7 +1,7 @@
 /* General Styles */
 body {
-    background: linear-gradient(135deg, #1e3c72, #2a5298);
-    color: white;
+    background: linear-gradient(90deg, #0d0d0d, #3a0ca3);
+    color: rgb(165, 165, 9);
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 20px;
@@ -9,10 +9,6 @@ body {
 
 h1 {
     font-size: 36px;
-    margin-bottom: 20px;
-}
-h1 {
-    font-size: 33px;
     margin-bottom: 20px;
 }
 
@@ -49,4 +45,7 @@ a#anc {
 a#anc:hover {
     color: #ff9900;
     text-decoration: underline;
+}
+h3{
+    color:#ffcc00
 }
