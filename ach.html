@@ -3,27 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Yash Vardhan Singh</title>
-    <link rel="stylesheet" href="InfoSTY.css">
+    <title>Contact</title>
+    <Style>
+        /* General Page Background */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0d0d0d, #3a0ca3); /* Black → Deep Purple */
+    color: #fff;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.05); /* Glass effect */
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+}
+
+/* Heading */
+.h2 {
+    text-align: center;
+    color: #FFC107; /* Yellow accent */
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Contact Layout */
+.contact-content {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Contact Form */
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-field label {
+    margin-bottom: 8px;
+    color: #FFC107;
+    font-weight: 600;
+}
+
+.form-field input,
+.form-field textarea {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid #6c63ff;
+    border-radius: 8px;
+    padding: 12px;
+    color: #fff;
+    font-size: 1rem;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+    border: 1px solid #FFC107;
+    box-shadow: 0 0 8px rgba(255, 193, 7, 0.6);
+    outline: none;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Submit Button */
+.btn-cta {
+    background: #FFC107;
+    border: none;
+    color: #000;
+    font-weight: 700;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.btn-cta:hover {
+    background: #e0a800;
+    transform: translateY(-2px);
+}
+
+/* Contact Image */
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 250px;
+}
+
+.image-container img {
+    max-width: 100%;
+    border-radius: 12px;
+    border: 3px solid #FFC107;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s;
+}
+
+.image-container img:hover {
+    transform: scale(1.03);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-container {
+        margin-top: 20px;
+    }
+}
+
+    </Style>
 </head>
 <body>
+    <section class="contact">
+        <div class="container">
+          <h2 class="h2" id="contact">Contact</h2>
+          <div class="contact-content">
+            <form action="https://formsubmit.co/el/lowuta" method="POST" class="contact-form">
+              <div class="form-field">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required />
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required inputmode="email" />
+              </div>
+              <div class="form-field">
+                <label for="message">How can I help you?</label>
+                <textarea name="message" id="message" required></textarea>
+              </div>
 
-    <div class="container">
-        <div class="info-box">
-            <h2>Contact Me</h2>
-            <div class="contact-info">
-                <p><strong>Name:</strong> Yash Vardhan Singh</p>
-                <p><strong>Phone:</strong> 8755001662</p>
-                <p><strong>Email:</strong> <a href="mailto:yash.v.singh1628@gmail.com">yash.v.singh1628@gmail.com</a></p>
-                <p><strong>Address:</strong> Greater Noida</p>
-                <p><strong>Home Town:</strong> Meerut</p>
-                <div class="social-links">
-                    <a href="https://www.instagram.com/yash_jaglan02/?hl=en" class="social-btn insta">Instagram</a>
-                    <a href="https://www.linkedin.com/in/y-v-singh/" class="social-btn linkedin">LinkedIn</a>
-                </div>
+              <input type="hidden" name="_captcha" value="false" />
+
+              <button type="submit" class="btn btn-cta">Send</button>
+            </form>
+            <div class="image-container">
+              <img src="assets/images/contact-pic.jpeg" alt="Contact Image" />
             </div>
+          </div>
         </div>
-    </div>
-
+      </section>
 </body>
 </html>
