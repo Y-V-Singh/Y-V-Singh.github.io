@@ -6,7 +6,21 @@ body {
     margin: 0;
     padding: 0;
 }
-
+.resume-btn {
+    display: inline-block;
+    background: #FFC107; /* Yellow button */
+    color: #000;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: background 0.3s, transform 0.2s;
+}
+.resume-btn:hover {
+    background: #e0a800;
+    transform: translateY(-2px);
+}
 .email-btn {
     display: inline-block;
     background: #FFC107; /* Yellow button */
