@@ -7,6 +7,19 @@ body {
     padding: 0;
 }
 
+.email-btn {
+    display: inline-block;
+    background: #FFC107; /* Yellow button */
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+.email-btn:hover {
+    background: #e0a800;
+}
 /* Navbar */
 .navbar {
     display: flex;
